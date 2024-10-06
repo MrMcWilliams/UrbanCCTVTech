@@ -64,7 +64,21 @@
     </script>
 
     <style>
-    /* Basic styles */
+    /* Logo styles */
+header img {
+    max-width: 150px; /* Limit logo size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the container */
+}
+
+/* Service Card Styles */
+.service-card img {
+    max-width: 100%; /* Allow the image to take full width of the service card */
+    height: auto; /* Keep aspect ratio */
+    object-fit: cover; /* Cover the entire area of the service card */
+    border-radius: 5px; /* Optional: Rounded corners for images */
+}
+        /* Basic styles */
     body {
         font-family: Arial, sans-serif;
         margin: 0;
