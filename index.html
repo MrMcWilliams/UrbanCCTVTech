@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urban CCTV Tech offers professional CCTV installation and repair services across Roodepoort, Randburg, Sandton, and Johannesburg North.">
+    <meta name="keywords" content="CCTV Installation, CCTV Repair, CCTV Maintenance, Urban CCTV, Roodepoort CCTV Installation, Randburg CCTV Repair, Sandton Security Systems, home security cameras, affordable CCTV installation, best CCTV repair services">
+    <meta name="author" content="Urban CCTV">
+    <title>Urban CCTV Tech - Professional CCTV Installation and Repair</title>
+
+    <meta property="og:title" content="Urban CCTV Tech - Installation and Repair Services">
+    <meta property="og:description" content="Professional CCTV installation and repair services in Roodepoort, Randburg, Sandton, and Johannesburg North.">
+    <meta property="og:image" content="cctv_service_image.jpg">
+    <meta property="og:url" content="https://www.urbancctvtechs.com">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Urban CCTV Tech - Installation and Repair Services">
+    <meta name="twitter:description" content="Professional CCTV installation and repair services in Roodepoort, Randburg, Sandton, and Johannesburg North.">
+    <meta name="twitter:image" content="cctv_service_image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Urban CCTV Techs",
+      "url": "https://www.urbancctv.com",
+      "logo": "https://www.urbancctv.com/logo.jpg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27-12-345-6789",
+        "contactType": "Customer Service",
+        "areaServed": "ZA",
+        "availableLanguage": "English"
+      },
+      "sameAs": [
+        "https://www.facebook.com/urbancctv",
+        "https://twitter.com/urbancctv",
+        "https://www.instagram.com/urbancctv"
+      ],
+      "serviceType": [
+        {
+          "@type": "Service",
+          "name": "CCTV Installation",
+          "description": "Professional installation of CCTV systems to enhance security."
+        },
+        {
+          "@type": "Service",
+          "name": "CCTV Repair",
+          "description": "Repairs and maintenance services for existing CCTV systems."
+        },
+        {
+          "@type": "Service",
+          "name": "CCTV Maintenance",
+          "description": "Regular maintenance and checks for CCTV systems for optimal performance."
+        }
+      ],
+      "address": {
+        "@type": "Jan Smuts Ave, Johannesburg, 2196",
+        "addressLocality": "Rosebank",
+        "addressRegion": "GAU",
+        "addressCountry": "ZA"
+      }
+    }
+    </script>
+
+    <style>
+    /* Basic styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #eef5e1; /* Light background color */
+        color: #333;
+    }
+
+    /* Header styles */
+    header {
+        background-color: #DC143C; /* Green color */
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+
+    header img {
+        max-width: 150px; /* Limit logo size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Service Cards Styles */
+    .service-card-container {
+        display: flex; /* Align service cards horizontally */
+        justify-content: space-between; /* Space between cards */
+        flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+        margin: 20px; /* Space around the container */
+    }
+
+    .service-card {
+        flex: 1; /* Allow cards to grow and shrink */
+        margin: 10px; /* Space between cards */
+        background: #f9f9f9; /* Light gray background for service cards */
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        text-align: center; /* Center align text in service cards */
+        padding: 15px; /* Added padding inside service cards */
+        transition: transform 0.2s; /* Add smooth hover transition */
+    }
+
+    .service-card:hover {
+        transform: scale(1.05); /* Slightly enlarge card on hover */
+    }
+
+    /* Map styles */
+    #map {
+        text-align: center; /* Center align the map */
+        margin: 20px auto; /* Center with margin */
+    }
+
+    #map iframe {
+        width: 100%; /* Full width of the container */
+        height: 400px; /* Fixed height for map */
+        max-width: 800px; /* Set a max width for larger displays */
+        border: none; /* Remove border */
+        border-radius: 8px; /* Rounded corners for the iframe */
+    }
+
+    /* Footer styles */
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #DC143C; /* Green color */
+        color: white;
+        width: 100%;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .service-card {
+            flex: 1 1 100%; /* Stack cards on smaller screens */
+            max-width: 100%; /* Ensure cards take full width */
+        }
+    }
+
+    /* Form styling */
+    #bookingForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        text-align: left;
+        width: 100%;
+    }
+
+    input[type="text"], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    /* Button styling */
+    input[type="submit"], button[type="button"] {
+        background-color: #4CAF50; /* Green color */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%; /* Full width buttons */
+    }
+
+    input[type="submit"]:hover, button[type="button"]:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+
+    /* Additional Styles */
+    .star-rating {
+        color: #FFD700; /* Gold color */
+    }
+
+    .faq, .testimonial {
+        margin: 20px 0;
+    }
+
+    .testimonial {
+        background-color: #f0f0f0;
+        border-left: 4px solid #4CAF50;
+        padding: 15px;
+    }
+</style>
+<script>
+        function bookService() {
+            const name = document.getElementById('name').value;
+            const service = document.getElementById('service').value;
+            const additionalInfo = document.getElementById('message').value;
+            
+            // Construct the WhatsApp message
+            const phoneNumber = '27619379774'; // WhatsApp number without +
+            const message = `Hi, I would like to book a service.%0AName: ${encodeURIComponent(name)}%0AService: ${encodeURIComponent(service)}%0AAdditional Info: ${encodeURIComponent(additionalInfo)}`;
+            
+            // Create WhatsApp URL using wa.me
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
+            
+            // Redirect to WhatsApp
+            window.open(whatsappURL, '_blank');
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <img src="Urban CCTV Tech Johannesburg.png"" alt="Urban CCTV Tech Johannesburg">
+        <h1>Urban CCTV Techs</h1>
+        <div class="social-media">
+            <a href="https://www.facebook.com/urbancctvtechs" target="_blank">Facebook</a>
+            <a href="https://twitter.com/urbancctvtechs" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com/urbancctvtechs" target="_blank">Instagram</a>
+        </div>
+        <p class="address">
+<p class="address"> <i class="fas fa-map-marker-alt"></i> Jan Smuts Ave, Rosebank, Johannesburg, 2196
+</p>
+    </header>
+
+    <main>
+        <section id="services">
+            <h2 style="text-align: center;">Services We Offer</h2>
+            <div class="service-card-container">
+                <div class="service-card">
+                    <img src="cctv installation.jpeg" alt="CCTV Installation Sandton" />
+                    <h3>CCTV Installation</h3>
+                    <p>Prices From R1 999.00</p>
+                    <p>Professional installation of CCTV systems to enhance security.</p>
+                </div>
+                <div class="service-card">
+                    <img src="cctv repair.jpeg" alt="CCTV Repair Randburg" />
+                    <h3>CCTV Repair</h3>
+                    <p>Prices from R550.00</p>
+                    <p>Repairs and maintenance services for existing CCTV systems.</p>
+                </div>
+                <div class="service-card">
+                    <img src="cctv maintenance.jpeg" alt="CCTV Maintenance Roodepoort" />
+                    <h3>CCTV Maintenance</h3>
+                    <p>Prices R1100</p>
+                    <p>Regular maintenance and checks for CCTV systems for optimal performance.</p>
+                </div>
+            </div>
+        <section id="contact">
+            <h3>Make An Appointment</h3>
+            <form id="bookingForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="Repair">Repair</option>
+            <option value="Installation">Installation</option>
+            <option value="Maintenance">Maintenance</option>
+        </select>
+
+        <label for="message">Additional Information:</label>
+        <textarea id="message" name="message" placeholder="Any additional details"></textarea>
+
+        <button type="button" onclick="bookService()">Book Service</button>
+    </form>
+        </section>
+            
+            <h4>Professional CCTV Installation and Repair</h4>
+            <p>We proudly offer our survilence camera services in a range of vibrant suburbs across Roodepoort, Randburg, Sandton, and Johannesburg North. Our <strong>affordable CCTV installation</strong> ensures that your property is equipped with the latest home security cameras. In the Roodepoort area, we cover neighborhoods such as Roodepoort, Florida, Lindhaven, Weltevreden Park, Horison, Discovery, Krugersdorp North, Strubens Valley, Quellerina, and Ruimsig.</p>
+            <p>Our <strong>best CCTV repair services</strong> extend to Randburg, where we serve areas like Cresta, Fontainebleau, Ferndale, Linden, Robindale, Honeydew, Northcliff, Dorandia, and Blairgowrie. In Sandton, we cater to upscale areas including Bryanston, Morningside, Melrose Arch, Parkmore, Rivonia, Sunninghill, Atholl, Woodmead, and Benmore Gardens.</p>
+            <p>Lastly, in Johannesburg North, our reach encompasses Linden, Emmarentia, Melville, Auckland Park, Parktown North, Westdene, Craighall Park, Greenside, Illovo, and Victory Park. This diverse coverage enables us to meet the unique needs of each community we serve, providing tailored solutions for both residential and business properties.</p>
+            <p>We prioritize customer satisfaction and safety, offering expert advice on the best <strong>CCTV systems for home security</strong> and <strong>CCTV maintenance tips</strong> to ensure your system remains effective. Contact us today to learn more about how we can secure your premises with the latest CCTV technology.</p>
+        </section>
+
+        <section id="faqs">
+            <h2>Trending FAQs</h2>
+            <div class="faq">
+                <h4>What is the cost of CCTV installation?</h4>
+                <p>The cost of CCTV installation varies depending on the number of cameras and the complexity of the system. Contact us for a personalized quote based on your needs.</p>
+            </div>
+            <div class="faq">
+                <h4>How long does it take to install a CCTV system?</h4>
+                <p>Typically, installation takes a few hours to a full day, depending on the system's size and layout of your property.</p>
+            </div>
+            <div class="faq">
+                <h4>Can I monitor my CCTV cameras remotely?</h4>
+                <p>Yes! Our CCTV systems allow remote access via smartphones, tablets, or computers.</p>
+            </div>
+            <div class="faq">
+                <h4>How often should I service my CCTV system?</h4>
+                <p>We recommend servicing your CCTV system every 6 to 12 months to ensure optimal performance and address any issues early.</p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial">
+                <p>"Urban CCTV Techs did an excellent job installing our security system. Highly recommend!" <span class="star-rating">★★★★★</span> - <strong>Jane D.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Great service and support. They quickly repaired our CCTV, and now it works flawlessly." <span class="star-rating">★★★★☆</span> - <strong>John S.</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"I appreciate the professionalism of Urban CCTV. The installation was smooth, and they answered all my questions." <span class="star-rating">★★★★★</span> - <strong>Sarah P.</strong></p>
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>Service Area Map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d938788.111660451!2d28.0458004!3d-26.1063495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebd46e96e1df963%3A0x14f01585e561b82!2sSandton!5e0!3m2!1sen!2sza!4v1637215200542!5m2!1sen!2sza" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer>
+<div class="hours"> <p>Hours of Operation</p> <p>Open Monday to Saturday from 08:00 to 17:00</p> </div>
+        <p>&copy; 2024 Urban CCTV Techs. All Rights Reserved.</p>
+        <p><a href="https://www.yellowpages.com" target="_blank">Yellow Pages</a> | <a href="https://medium.com" target="_blank">Medium</a> | <a href="https://yellosa.com" target="_blank">Yellosa</a></p>
+    </footer>
+</body>
+</html>
